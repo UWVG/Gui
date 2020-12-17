@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+</head>
+<body>
+  <script src="qwebchannel.js"></script> 
+  <script type="text/javascript">
+
+  var updateattribute=function(text)
+  {	
+    document.write(text.a);
+    document.write(text.b);
+    document.write(text.c);
+  }
+
+  new QWebChannel(qt.webChannelTransport,
+  function(channel){
+  var webobj = channel.objects.context;
+  window.foo = webobj;
+  //这里修改也会触发事件只要内容发生改变都会传递给
+  //webobj.content = 'This is web content';
+  webobj.onMsg("I love you!");
+  webobj.contentChanged.connect(updateattribute);
+  });
+  </script>
+</body>
+</html>

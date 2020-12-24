@@ -21,10 +21,13 @@
     <ClCompile Include="ros_lib\time.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ros_lib\WindowsSocket.cpp">
+    <ClCompile Include="ros_lib\duration.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ros_lib\duration.cpp">
+    <ClCompile Include="..\..\DataTransportLayer\WindowsSocket\WindowsSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DataTransportLayer\WindowsSocket\WindowsSocketClient.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,7 +38,10 @@
     <ClInclude Include="ros_lib\ros.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="ros_lib\WindowsSocket.h">
+    <ClInclude Include="..\..\DataTransportLayer\WindowsSocket\WindowsSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DataTransportLayer\WindowsSocket\WindowsSocketClient.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

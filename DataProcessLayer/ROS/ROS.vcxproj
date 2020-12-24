@@ -70,7 +70,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>D:\Gui\DataTransportLayer\ROS\ros_lib;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Gui\DataProcessLayer\ROS\ros_lib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\Gui\DataTransportLayer\WindowsSocket;D:\Gui\DataProcessLayer\ROS\ros_lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -126,14 +129,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\DataTransportLayer\WindowsSocket\WindowsSocket.cpp" />
+    <ClCompile Include="..\..\DataTransportLayer\WindowsSocket\WindowsSocketClient.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ros_lib\duration.cpp" />
     <ClCompile Include="ros_lib\time.cpp" />
-    <ClCompile Include="ros_lib\WindowsSocket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\DataTransportLayer\WindowsSocket\WindowsSocket.h" />
+    <ClInclude Include="..\..\DataTransportLayer\WindowsSocket\WindowsSocketClient.h" />
     <ClInclude Include="ros_lib\ros.h" />
-    <ClInclude Include="ros_lib\WindowsSocket.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

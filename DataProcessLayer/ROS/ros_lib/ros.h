@@ -26,12 +26,12 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 #ifndef _ROS_H_
 #define _ROS_H_
 
-#include "WindowsSocket.h"
+#include "../../DataTransportLayer/WindowsSocket/WindowsSocketClient.h"
 #include "ros/node_handle.h"
 
 namespace ros
 {
-typedef NodeHandle_<WindowsSocket> NodeHandle;
+typedef NodeHandle_<WindowsSocketClient> NodeHandle;
 }
 
 #endif

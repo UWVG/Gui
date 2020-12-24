@@ -14,10 +14,10 @@ int main(int argc, char* argv[])
 	ros::NodeHandle nh;
 	const char* ros_master = "192.168.2.225";
 	int a = 0;
-
+	nh.getHardware()->configure((char*)"192.168.2.225", 11411);
 	printf("Connecting to server at %s\n", ros_master);
-	nh.initNode((char *)ros_master);
-
+	//nh.initNode((char*)ros_master);
+	nh.initNode();
 	printf("Advertising cmd_vel message\n");
 	geometry_msgs::Twist twist_msg;
 	ros::Publisher cmd_vel_pub("cmd_vel", &twist_msg);
@@ -41,3 +41,5 @@ int main(int argc, char* argv[])
 	printf("All done!\n");
 	return 0;
 }
+
+

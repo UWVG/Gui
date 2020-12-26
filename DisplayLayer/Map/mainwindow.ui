@@ -34,7 +34,7 @@
     <property name="title">
      <string>GPS地图</string>
     </property>
-    <widget class="QWidget" name="widgetMap" native="true">
+    <widget class="MapWidget" name="widgetMap" native="true">
      <property name="enabled">
       <bool>true</bool>
      </property>
@@ -226,6 +226,14 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MapWidget</class>
+   <extends>QWidget</extends>
+   <header>MapWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

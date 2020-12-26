@@ -2,8 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "MapWidget.h"
-#include "gpsdialog.h"
+#include "DisplayLayer/GamePad/gamepadwidget.h"
 
 namespace Ui {
 class MainWindow;
@@ -16,14 +15,10 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-protected:
-    void resizeEvent(QResizeEvent *);
+
 private:
     Ui::MainWindow  *ui;
-
-
-private slots:
-
+    GamePadWidget   *gamePadWidget;
 };
 
 #endif // MAINWINDOW_H

@@ -26,12 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        MapWidget.cpp \
         gpsdialog.cpp \
         main.cpp \
         mainwindow.cpp \
         webcontext.cpp
 
 HEADERS += \
+        MapWidget.h \
         gpsdialog.h \
         mainwindow.h \
         webcontext.h

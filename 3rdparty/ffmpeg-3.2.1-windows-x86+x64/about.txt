@@ -1,0 +1,33 @@
+build script from https://github.com/wang-bin/build_ffmpeg
+with dxva2, d3d11va, qsv enabled
+
+ffmpeg version 3.2.1-QtAV Copyright (c) 2000-2016 the FFmpeg developers
+  built with gcc 6.2.0 (Rev2, Built by MSYS2 project)
+  configuration: --extra-version=QtAV --disable-doc --disable-debug --enable-shared --disable-static --enable-runtime-cpudetect --enable-hwaccels --enable-avresample --disable-postproc --disable-iconv --enable-pic --extra-ldflags=' -static-libgcc -Wl,-Bstatic' --enable-small --enable-libmfx
+  libavutil      55. 34.100 / 55. 34.100
+  libavcodec     57. 64.101 / 57. 64.101
+  libavformat    57. 56.100 / 57. 56.100
+  libavdevice    57.  1.100 / 57.  1.100
+  libavfilter     6. 65.100 /  6. 65.100
+  libavresample   3.  1.  0 /  3.  1.  0
+  libswscale      4.  2.100 /  4.  2.100
+  libswresample   2.  3.100 /  2.  3.100
+Hyper fast Audio and Video encoder
+usage: ffmpeg [options] [[infile options] -i infile]... {[outfile options] outfile}...
+
+Use -h to get full help or, even better, run 'man ffmpeg'
+ffmpeg version 3.2.1-QtAV Copyright (c) 2000-2016 the FFmpeg developers
+  built with gcc 6.2.0 (Rev2, Built by MSYS2 project)
+  configuration: --extra-version=QtAV --disable-doc --disable-debug --enable-shared --disable-static --enable-runtime-cpudetect --enable-hwaccels --enable-avresample --disable-postproc --disable-iconv --enable-pic --extra-ldflags=' -static-libgcc -Wl,-Bstatic' --enable-small --enable-libmfx
+  libavutil      55. 34.100 / 55. 34.100
+  libavcodec     57. 64.101 / 57. 64.101
+  libavformat    57. 56.100 / 57. 56.100
+  libavdevice    57.  1.100 / 57.  1.100
+  libavfilter     6. 65.100 /  6. 65.100
+  libavresample   3.  1.  0 /  3.  1.  0
+  libswscale      4.  2.100 /  4.  2.100
+  libswresample   2.  3.100 /  2.  3.100
+Hyper fast Audio and Video encoder
+usage: ffmpeg [options] [[infile options] -i infile]... {[outfile options] outfile}...
+
+Use -h to get full help or, even better, run 'man ffmpeg'

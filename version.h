@@ -1,7 +1,7 @@
 #ifndef VERSION_H
 #define VERSION_H
 
-#define PRODUCT_ICON           "D:\\Gui\\gui48x48.ico" // 图标
+#define PRODUCT_ICON           "gui48x48.ico" // 图标
 
 #define FILE_VERSION           0,0,0,0   // 文件版本
 #define FILE_VERSION_STR       "0.0.0.0"

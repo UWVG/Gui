@@ -1,0 +1,5 @@
+include(MainWindow/MainWindow.pri)
+include(GamePad/GamePad.pri)
+include(Map/Map.pri)
+include(Player/Player.pri)
+include(StatusPanel/StatusPanel.pri)

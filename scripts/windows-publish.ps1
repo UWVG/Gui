@@ -43,6 +43,7 @@ function Main() {
     New-Item -ItemType Directory $archiveName\ffplay
     Copy-Item 3rdparty\ffplay\*.dll $archiveName\ffplay\
     Copy-Item 3rdparty\ffplay\ffplay.exe $archiveName\ffplay\
+    Copy-Item 3rdparty\spider\*.dll $archiveName\
     # ´ò°üzip
     Compress-Archive -Path $archiveName $archiveName'.zip'
 }

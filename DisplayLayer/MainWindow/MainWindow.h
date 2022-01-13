@@ -1,9 +1,12 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+
 #include <QMainWindow>
-#include "DisplayLayer/GamePad/gamepadwidget.h"
 #include "../Player/Player.h"
+#include "ComThread.h"
+#include "DisplayLayer/GamePad/gamepadwidget.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -18,6 +21,8 @@ public:
 public slots:
     void slot_widget(QWidget*);
     void slot_widget1(QWidget*);
+    void slot_a(uint32_t);
+    void slot_connect();
 private slots:
     void on_pushButton_clicked();
 
@@ -37,6 +42,9 @@ private:
     QWidget                 *widget;
     QWidget                 *widget1;
     QWidget                 *m_widget;
+    ComThread               *comThread;
+
+
 };
 
 #endif // MAINWINDOW_H

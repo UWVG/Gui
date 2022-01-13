@@ -20,5 +20,3 @@ void GamePadIFS::valueChanged(int x,double y)
 {
     emit update(x,y);
 }
-
-

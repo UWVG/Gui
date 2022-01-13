@@ -24,7 +24,8 @@ private:
     QQuickWidget    *quickWidget;
     GamePadIFS      *gamePadIFS;
 
-
+signals:
+    void servo_ctl(uint32_t);
 public slots:
     void update(int,double);
 };

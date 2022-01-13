@@ -1,0 +1,1 @@
+include(ROSComManger/ROSComManger.pri)

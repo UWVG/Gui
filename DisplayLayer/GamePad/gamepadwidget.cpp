@@ -33,6 +33,8 @@ void GamePadWidget::update(int x,double y)
     {
     case GamePadIFS::ButtonA:
         break;
+    case GamePadIFS::AxisLeftX:
+        emit servo_ctl((y*100+100)/1);
     default:
         break;
     }

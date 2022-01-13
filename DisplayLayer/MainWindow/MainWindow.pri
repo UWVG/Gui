@@ -1,5 +1,4 @@
 
-
 QT += gui
 
 FORMS += \
@@ -11,3 +10,8 @@ HEADERS += \
 SOURCES += \
     $$PWD/MainWindow.cpp \
     $$PWD/main.cpp
+
+
+INCLUDEPATH += \
+    DataTransportLayer/ROSComManger/ROS/ros_lib \
+    DataTransportLayer/ROSComManger
